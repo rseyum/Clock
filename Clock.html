@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dynamic time and year</title>
+    <link rel="stylesheet" href="Clock.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Time of Day</h1>
+      <p>
+        A JavaScript project by YOUR NAME HERE Good Afternoon! This page was
+        taken from an HTML5 Flexible template that could be a good starting
+        point for some of your projects. The template file starts by setting a
+        background color on the HTML element, and setting max-width on the body,
+        which is styled like a wrapper. The BODY element is also set to a
+        percentage width so it leaves a bit of HTML color until it shrinks in
+        size toward the mobile view. There is an image with a class of FLEXIBLE
+        which is set to a max-width equal to the size of the image.
+        Simutaneously the class sets the image to a percentage width, allowing
+        the image to flex in size. The height is not changed, as this would skew
+        the image. The LIST elements inside the NAV are displayed inline by
+        setting the display to be inline-block. Bullets are removed by setting
+        the UL to display The FOOTER includes a clear:both to keep everything
+        above it!
+      </p>
+    </div>
+
+    <div style="text-align: center">
+      <h1 id="head"></h1>
+      <p id="par"></p>
+      <img id="image" width="200" height="200" />
+    </div>
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <div id="MyDateDisplay" class="day" onload="showTime()"></div>
+    <footer style="text-align: center">
+      <p id="par2"></p>
+    </footer>
+    <script src="Clock.js"></script>
+  </body>
 </html>
