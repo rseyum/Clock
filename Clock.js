@@ -15,15 +15,16 @@ function showTime() {
   s = s < 10 ? "0" + s : s;
   var time = h + ":" + m + ":" + s;
   document.getElementById("MyClockDisplay").innerHTML = time;
-  document.getElementById("MyDateDisplay").innerHTML = date;
+  document.getElementById("MyClockDisplay").innerHTML = date;
   setTimeout(showTime, 1000);
   var currentYear = date.getFullYear();
-  document.getElementById("par2").innerHTML = "&copy; " + currentYear;
+  document.getElementById("par2").innerHTML =
+    "&copy; " + "By Rahel Seyum" + currentYear;
 
   if (h == 5 || h <= 11) {
     h1.innerHTML = "Good Morning";
     par.innerHTML = "It's a morning time.";
-    image.src = "afternoon.png";
+    image.src = "img/morning.png";
     document.body.style.backgroundColor = "orange";
   }
   if (h == 12 || h <= 17) {
@@ -36,14 +37,14 @@ function showTime() {
   if (h == 18 || h <= 22) {
     h1.innerHTML = "Good evening";
     par.innerHTML = "It's a evening time.";
-    image.src = "img/morning.gif";
+    image.src = "img/evening.png";
     document.body.style.backgroundColor = "green";
     document.body.style.color = "white";
   }
   if (h == 23 || h <= 4) {
     h1.innerHTML = "Good night";
     par.innerHTML = "It's a night time.";
-    image.src = "img/morning.gif";
+    image.src = "img/night.png";
     document.body.style.backgroundColor = "yellow";
   }
 }
