@@ -19,16 +19,18 @@ body{
     padding: 10px;
 }
 .box-content{
+  margin:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   align-items: center;
 }
 .content{
-margin-top:150px;
+margin-top:180px;
+margin-bottom:auto;
 }
 .date-time{
-margin-bottom: 20px;
+margin-top: 20px;
 }
 .container>h1{
 text-align: center;
