@@ -6,6 +6,9 @@ body{
     height: 100%;
     padding: 0;
 }
+.body-container{
+    
+}
 .box-content{
     display: flex;
     flex-direction: column;
