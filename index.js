@@ -27,41 +27,21 @@ function showTime() {
     image.src = "img/morning.png";
     document.body.style.backgroundColor = "orange";
   }
-  if (
-    currentHour == 12 ||
-    currentHour == 13 ||
-    currentHour == 14 ||
-    currentHour == 15 ||
-    currentHour == 16 ||
-    currentHour == 17
-  ) {
+  if (h == 12 || h == 13 || h == 14 || h == 15 || h == 16 || h == 17) {
     h1.innerHTML = "Good Afternoon";
     par.innerHTML = "It's a afternoon time.";
     image.src = "img/afternoon.png";
     document.body.style.backgroundColor = "blue";
     document.body.style.color = "white";
   }
-  if (
-    currentHour == 18 ||
-    currentHour == 19 ||
-    currentHour == 20 ||
-    currentHour == 21 ||
-    currentHour == 22
-  ) {
+  if (h == 18 || h == 19 || h == 20 || h == 21 || h == 22) {
     h1.innerHTML = "Good evening";
     par.innerHTML = "It's a evening time.";
     image.src = "img/evening.png";
     document.body.style.backgroundColor = "green";
     document.body.style.color = "white";
   }
-  if (
-    currentHour == 23 ||
-    currentHour == 0 ||
-    currentHour == 1 ||
-    currentHour == 2 ||
-    currentHour == 3 ||
-    currentHour == 4
-  ) {
+  if (h == 23 || h == 0 || h == 1 || h == 2 || h == 3 || h == 4) {
     h1.innerHTML = "Good night";
     par.innerHTML = "It's a night time.";
     image.src = "img/night.png";
