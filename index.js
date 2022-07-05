@@ -19,7 +19,7 @@ function showTime() {
   setTimeout(showTime, 1000);
   var currentYear = date.getFullYear();
   document.getElementById("par2").innerHTML =
-    "&copy; " + "By Rahel Seyum" + currentYear;
+    "&copy; " + "By Rahel Seyum" + " " + currentYear;
 
   if (h == 5 || h <= 11) {
     h1.innerHTML = "Good Morning";
